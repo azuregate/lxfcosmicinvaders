@@ -1,0 +1,11 @@
+1750 DEF PROC_Mystery_Hit
+1760 PRINTTAB(MystX%,1);"     ";
+1770 DIM MysteryScores%(15)
+1780 FOR I%=0 TO 15
+1790   READ MysteryScores%(I%)
+1800 NEXT I%
+1810 DATA 100,50,50,100,150,100,100,50,300,100,100,100,50,150,100,50
+1820 Score%=Score%+MysteryScores%(MysteryHitCount% MOD 15)
+1830 MysteryHitCount%=MysteryHitCount%+1
+1840 PROC_Info_line
+1850 ENDPROC
