@@ -328,6 +328,6 @@
 3090 B%=1
 3100 Base%=Base%-1
 3110 PRINTTAB(0,24);STRING$(20," ");
-3120 IF Base%=0 THEN finish=TRUE ELSE PROC_Display_Base : PROC_Info_line
+3120 IF Base%=0 THEN finish=TRUE ELSE PROC_Display_Base : PROC_Info_Line
 3130 FOR I%=1 TO 10000 : NEXT
 3140 ENDPROC
