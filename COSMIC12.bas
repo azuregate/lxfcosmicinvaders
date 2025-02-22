@@ -249,6 +249,8 @@
 2320 IF MystX%=35 THEN Mystery%=FALSE : PRINTTAB(MystX%,1);"    ";
 2330 ENDPROC
 2340 DEF PROC_Play
+2341 Start%=0
+2342 Score%=0 : Base%=3
 2350 REPEAT : PROC_Setup_Game
 2360 REPEAT : PROC_Key_Test : PROC_Update_Invaders : IF NOT finish THEN PROC_Bombs
 2370 UNTIL finish=TRUE : Start%=Start%+1
